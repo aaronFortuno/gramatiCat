@@ -1,7 +1,15 @@
 import { useState } from 'react'
-import type { Exercise, MultipleChoiceQuestion, FillInTheBlankQuestion } from '../../types/exercise'
+import type {
+  Exercise,
+  MultipleChoiceQuestion,
+  FillInTheBlankQuestion,
+  DragAndDropQuestion,
+  WordClassificationQuestion,
+} from '../../types/exercise'
 import MultipleChoice from './MultipleChoice'
 import FillInTheBlank from './FillInTheBlank'
+import DragAndDrop from './DragAndDrop'
+import WordClassification from './WordClassification'
 
 interface Props {
   exercise: Exercise
@@ -28,21 +36,17 @@ export default function ExerciseRunner({ exercise, onComplete }: Props) {
   }
 
   function handleNext() {
-    const nextIndex = currentIndex + 1
-    if (nextIndex >= total) {
+    if (currentIndex + 1 >= total) {
       setFinished(true)
-      const finalEncerts = encerts + (waitingNext ? 0 : 0) // already updated
-      onComplete(finalEncerts, errors)
+      onComplete(encerts, errors)
     } else {
-      setCurrentIndex(nextIndex)
+      setCurrentIndex(currentIndex + 1)
       setWaitingNext(false)
     }
   }
 
   if (finished) {
-    const finalEncerts = encerts
-    const finalErrors = errors
-    const percentage = total > 0 ? Math.round((finalEncerts / total) * 100) : 0
+    const percentage = total > 0 ? Math.round((encerts / total) * 100) : 0
 
     return (
       <div className="text-center space-y-6 py-8">
@@ -52,11 +56,11 @@ export default function ExerciseRunner({ exercise, onComplete }: Props) {
         <h2 className="text-2xl font-bold text-gray-900">Exercici completat!</h2>
         <div className="flex justify-center gap-8">
           <div className="text-center">
-            <p className="text-3xl font-bold text-green-600">{finalEncerts}</p>
+            <p className="text-3xl font-bold text-green-600">{encerts}</p>
             <p className="text-sm text-gray-500">Correctes</p>
           </div>
           <div className="text-center">
-            <p className="text-3xl font-bold text-red-500">{finalErrors}</p>
+            <p className="text-3xl font-bold text-red-500">{errors}</p>
             <p className="text-sm text-gray-500">Incorrectes</p>
           </div>
           <div className="text-center">
@@ -68,6 +72,43 @@ export default function ExerciseRunner({ exercise, onComplete }: Props) {
     )
   }
 
+  function renderQuestion() {
+    switch (exercise.tipus) {
+      case 'multiple-choice':
+        return (
+          <MultipleChoice
+            key={pregunta.id}
+            pregunta={pregunta as MultipleChoiceQuestion}
+            onAnswer={handleAnswer}
+          />
+        )
+      case 'fill-in-the-blank':
+        return (
+          <FillInTheBlank
+            key={pregunta.id}
+            pregunta={pregunta as FillInTheBlankQuestion}
+            onAnswer={handleAnswer}
+          />
+        )
+      case 'drag-and-drop':
+        return (
+          <DragAndDrop
+            key={pregunta.id}
+            pregunta={pregunta as DragAndDropQuestion}
+            onAnswer={handleAnswer}
+          />
+        )
+      case 'word-classification':
+        return (
+          <WordClassification
+            key={pregunta.id}
+            pregunta={pregunta as WordClassificationQuestion}
+            onAnswer={handleAnswer}
+          />
+        )
+    }
+  }
+
   return (
     <div className="space-y-6">
       {/* Progress bar */}
@@ -75,7 +116,7 @@ export default function ExerciseRunner({ exercise, onComplete }: Props) {
         <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
           <div
             className="h-full bg-blue-500 rounded-full transition-all duration-300"
-            style={{ width: `${((currentIndex) / total) * 100}%` }}
+            style={{ width: `${(currentIndex / total) * 100}%` }}
           />
         </div>
         <span className="text-sm text-gray-500 font-medium whitespace-nowrap">
@@ -83,36 +124,8 @@ export default function ExerciseRunner({ exercise, onComplete }: Props) {
         </span>
       </div>
 
-      {/* Pregunta */}
-      {exercise.tipus === 'multiple-choice' && (
-        <MultipleChoice
-          key={pregunta.id}
-          pregunta={pregunta as MultipleChoiceQuestion}
-          onAnswer={handleAnswer}
-        />
-      )}
+      {renderQuestion()}
 
-      {exercise.tipus === 'fill-in-the-blank' && (
-        <FillInTheBlank
-          key={pregunta.id}
-          pregunta={pregunta as FillInTheBlankQuestion}
-          onAnswer={handleAnswer}
-        />
-      )}
-
-      {exercise.tipus === 'drag-and-drop' && (
-        <div className="p-8 text-center text-gray-400">
-          Tipus drag-and-drop en desenvolupament (Fase 1.2)
-        </div>
-      )}
-
-      {exercise.tipus === 'word-classification' && (
-        <div className="p-8 text-center text-gray-400">
-          Tipus word-classification en desenvolupament (Fase 1.2)
-        </div>
-      )}
-
-      {/* Botó següent */}
       {waitingNext && (
         <button
           onClick={handleNext}

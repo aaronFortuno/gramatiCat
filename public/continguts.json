@@ -49,6 +49,11 @@
               "id": "ortografia-bv-001",
               "titol": "La b i la v: paraules d'ús freqüent",
               "fitxer": "ortografia/b-v/bv-001.json"
+            },
+            {
+              "id": "ortografia-bv-002",
+              "titol": "Classifica paraules: b o v",
+              "fitxer": "ortografia/b-v/bv-002.json"
             }
           ]
         },
@@ -116,7 +121,13 @@
           "id": "complements",
           "nom": "Complements del predicat",
           "descripcio": "CD, CI, CC, atribut i complement predicatiu.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "sintaxi-comp-001",
+              "titol": "Classifica els complements de la frase",
+              "fitxer": "sintaxi/complements/comp-001.json"
+            }
+          ]
         },
         {
           "id": "tipus-oracions",

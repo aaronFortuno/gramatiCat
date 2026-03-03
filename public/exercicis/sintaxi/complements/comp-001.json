@@ -1,0 +1,31 @@
+{
+  "id": "sintaxi-comp-001",
+  "titol": "Classifica els complements de la frase",
+  "descripcio": "Arrossega cada element a la funció sintàctica correcta.",
+  "tipus": "drag-and-drop",
+  "nivell": "ESO1",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Classifica els complements: 'La Maria va donar un llibre al Pere ahir al parc.'",
+      "elements": ["un llibre", "al Pere", "ahir", "al parc"],
+      "zones": ["CD", "CI", "CCT", "CCL"],
+      "parelles_correctes": { "un llibre": "CD", "al Pere": "CI", "ahir": "CCT", "al parc": "CCL" },
+      "explicacio": "CD: què va donar? Un llibre. CI: a qui? Al Pere. CCT: quan? Ahir. CCL: on? Al parc."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Classifica els complements: 'En Joan va comprar flors a la seva mare amb molt d'il·lusió.'",
+      "elements": ["flors", "a la seva mare", "amb molt d'il·lusió"],
+      "zones": ["CD", "CI", "CCM"],
+      "parelles_correctes": { "flors": "CD", "a la seva mare": "CI", "amb molt d'il·lusió": "CCM" },
+      "explicacio": "CD: què va comprar? Flors. CI: a qui? A la seva mare. CCM: com? Amb molt d'il·lusió."
+    }
+  ],
+  "metadata": {
+    "categoria": "sintaxi",
+    "tema": "complements",
+    "tags": ["complements", "CD", "CI", "CC", "sintaxi", "ESO"]
+  }
+}

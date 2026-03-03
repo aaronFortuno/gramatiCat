@@ -1,0 +1,26 @@
+{
+  "id": "ortografia-bv-002",
+  "titol": "Classifica paraules: b o v",
+  "descripcio": "Classifica les paraules segons si s'escriuen amb b o amb v.",
+  "tipus": "word-classification",
+  "nivell": "CS",
+  "temps_recomanat": 90,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Classifica les paraules següents segons si s'escriuen amb b o amb v.",
+      "paraules": ["beure", "veure", "acabar", "avisar", "brillar", "viure", "novembre", "provar"],
+      "columnes": ["Paraules amb B", "Paraules amb V"],
+      "classificacio_correcta": {
+        "Paraules amb B": ["beure", "acabar", "brillar", "novembre"],
+        "Paraules amb V": ["veure", "avisar", "viure", "provar"]
+      },
+      "explicacio": "Recordeu: 'beure' (llatí BIBERE) amb b, 'veure' (llatí VIDERE) amb v. 'Novembre' s'escriu amb b perquè prové de NOVEMBER."
+    }
+  ],
+  "metadata": {
+    "categoria": "ortografia",
+    "tema": "b-v",
+    "tags": ["b/v", "ortografia", "classificació", "cicle-superior"]
+  }
+}
