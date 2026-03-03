@@ -1,0 +1,57 @@
+{
+  "id": "ortografia-ag-001",
+  "titol": "Apòstrof: sí o no?",
+  "descripcio": "Tria la forma correcta: amb apòstrof o sense.",
+  "tipus": "multiple-choice",
+  "nivell": "CS",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["la escola", "l'escola"],
+      "resposta_correcta": 1,
+      "explicacio": "'L'escola': l'article femení 'la' s'apostrofa davant de vocal."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["la host", "l'host"],
+      "resposta_correcta": 0,
+      "explicacio": "'La host': 'la' no s'apostrofa davant de h aspirada en mots com 'host'."
+    },
+    {
+      "id": "q3",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["de intel·ligència", "d'intel·ligència"],
+      "resposta_correcta": 1,
+      "explicacio": "'D'intel·ligència': la preposició 'de' s'apostrofa davant de vocal."
+    },
+    {
+      "id": "q4",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["la una", "l'una"],
+      "resposta_correcta": 1,
+      "explicacio": "'L'una': l'article 'la' s'apostrofa davant de 'u' àtona ('una')."
+    },
+    {
+      "id": "q5",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["la ira", "l'ira"],
+      "resposta_correcta": 1,
+      "explicacio": "'L'ira': l'article femení s'apostrofa davant de vocal."
+    },
+    {
+      "id": "q6",
+      "enunciat": "Quina és la forma correcta per al pronom?",
+      "opcions": ["se en va anar", "se'n va anar"],
+      "resposta_correcta": 1,
+      "explicacio": "'Se'n va anar': el pronom 'en' s'apostrofa amb el pronom precedent."
+    }
+  ],
+  "metadata": {
+    "categoria": "ortografia",
+    "tema": "apostrof-guionet",
+    "tags": ["apòstrof", "apostrofació", "ortografia", "cicle-superior"]
+  }
+}

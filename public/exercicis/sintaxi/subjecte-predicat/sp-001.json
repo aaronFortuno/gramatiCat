@@ -1,0 +1,47 @@
+{
+  "id": "sintaxi-sp-001",
+  "titol": "Identifica subjecte i predicat",
+  "descripcio": "Arrossega cada fragment al lloc correcte: subjecte o predicat.",
+  "tipus": "drag-and-drop",
+  "nivell": "CS",
+  "temps_recomanat": 150,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Identifica les parts: 'El gos del veí borda cada nit.'",
+      "elements": ["El gos del veí", "borda cada nit"],
+      "zones": ["Subjecte", "Predicat"],
+      "parelles_correctes": { "El gos del veí": "Subjecte", "borda cada nit": "Predicat" },
+      "explicacio": "Subjecte: 'El gos del veí' (qui borda?). Predicat: 'borda cada nit' (què fa?)."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Identifica les parts: 'Les alumnes de tercer han aprovat l'examen.'",
+      "elements": ["Les alumnes de tercer", "han aprovat l'examen"],
+      "zones": ["Subjecte", "Predicat"],
+      "parelles_correctes": { "Les alumnes de tercer": "Subjecte", "han aprovat l'examen": "Predicat" },
+      "explicacio": "Subjecte: 'Les alumnes de tercer' (qui ha aprovat?). Predicat: 'han aprovat l'examen'."
+    },
+    {
+      "id": "q3",
+      "enunciat": "Identifica les parts: 'Aquella casa antiga necessita una reforma urgent.'",
+      "elements": ["Aquella casa antiga", "necessita una reforma urgent"],
+      "zones": ["Subjecte", "Predicat"],
+      "parelles_correctes": { "Aquella casa antiga": "Subjecte", "necessita una reforma urgent": "Predicat" },
+      "explicacio": "Subjecte: 'Aquella casa antiga' (què necessita?). Predicat: 'necessita una reforma urgent'."
+    },
+    {
+      "id": "q4",
+      "enunciat": "Identifica les parts: 'Van arribar tard els convidats de la boda.'",
+      "elements": ["els convidats de la boda", "Van arribar tard"],
+      "zones": ["Subjecte", "Predicat"],
+      "parelles_correctes": { "els convidats de la boda": "Subjecte", "Van arribar tard": "Predicat" },
+      "explicacio": "Subjecte: 'els convidats de la boda' (qui va arribar?). Predicat: 'Van arribar tard'. Atenció: el subjecte pot anar darrere del verb!"
+    }
+  ],
+  "metadata": {
+    "categoria": "sintaxi",
+    "tema": "subjecte-predicat",
+    "tags": ["subjecte", "predicat", "sintaxi", "cicle-superior"]
+  }
+}

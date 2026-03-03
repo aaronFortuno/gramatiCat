@@ -1,0 +1,57 @@
+{
+  "id": "ortografia-acc-001",
+  "titol": "Accent obert o tancat?",
+  "descripcio": "Tria l'accent correcte per a cada paraula.",
+  "tipus": "multiple-choice",
+  "nivell": "CS",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["café", "cafè"],
+      "resposta_correcta": 1,
+      "explicacio": "'Cafè' porta accent obert (è) perquè la e és oberta."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["inglés", "inglès", "anglès", "anglés"],
+      "resposta_correcta": 2,
+      "explicacio": "'Anglès' s'escriu amb a- inicial (no 'inglès', que és un castellanisme) i amb accent obert."
+    },
+    {
+      "id": "q3",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["també", "tambè", "tambe"],
+      "resposta_correcta": 0,
+      "explicacio": "'També' porta accent tancat (é) perquè la e és tancada."
+    },
+    {
+      "id": "q4",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["últim", "últìm", "últím"],
+      "resposta_correcta": 0,
+      "explicacio": "'Últim' porta accent tancat a la u (ú) per ser esdrúixola."
+    },
+    {
+      "id": "q5",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["pàgina", "págína", "pagina"],
+      "resposta_correcta": 0,
+      "explicacio": "'Pàgina' porta accent obert (à) per ser esdrúixola amb a oberta."
+    },
+    {
+      "id": "q6",
+      "enunciat": "Quina és la forma correcta?",
+      "opcions": ["telèfon", "teléfon", "telefon"],
+      "resposta_correcta": 0,
+      "explicacio": "'Telèfon' porta accent obert (è) per ser esdrúixola."
+    }
+  ],
+  "metadata": {
+    "categoria": "ortografia",
+    "tema": "accents",
+    "tags": ["accents", "obert", "tancat", "ortografia", "cicle-superior"]
+  }
+}

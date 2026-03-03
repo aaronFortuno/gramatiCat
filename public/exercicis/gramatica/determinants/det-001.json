@@ -1,0 +1,55 @@
+{
+  "id": "gramatica-det-001",
+  "titol": "Articles i determinants: tria el correcte",
+  "descripcio": "Completa les frases amb l'article o determinant adequat.",
+  "tipus": "fill-in-the-blank",
+  "nivell": "CS",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "_ home ha vingut a buscar-te.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "Un", "opcions": ["Un", "El", "En", "Lo"] }
+      ],
+      "explicacio": "'Un home': article indefinit masculí singular davant de substantiu desconegut."
+    },
+    {
+      "id": "q2",
+      "enunciat": "He vist _ amiga de la Maria.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "una", "opcions": ["una", "la", "na", "sa"] }
+      ],
+      "explicacio": "'Una amiga': article indefinit femení. No s'apostrofa perquè és indefinit."
+    },
+    {
+      "id": "q3",
+      "enunciat": "_ meus pares vindran demà.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "Els", "opcions": ["Els", "Los", "Mons", "Uns"] }
+      ],
+      "explicacio": "'Els meus pares': article definit masculí plural. 'Los' no és normatiu en català central."
+    },
+    {
+      "id": "q4",
+      "enunciat": "_ poc temps he après molt.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "En", "opcions": ["En", "El", "Un", "Al"] }
+      ],
+      "explicacio": "'En poc temps': preposició 'en' davant d'expressions temporals."
+    },
+    {
+      "id": "q5",
+      "enunciat": "_ dues germanes estudien a Barcelona.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "Les", "opcions": ["Les", "Las", "Unes", "Ses"] }
+      ],
+      "explicacio": "'Les dues germanes': article definit femení plural. 'Las' no és normatiu."
+    }
+  ],
+  "metadata": {
+    "categoria": "gramatica",
+    "tema": "determinants",
+    "tags": ["determinants", "articles", "gramàtica", "cicle-superior"]
+  }
+}

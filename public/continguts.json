@@ -23,13 +23,30 @@
           "id": "conjugacio-verbal",
           "nom": "Conjugació verbal",
           "descripcio": "Temps verbals, modes i verbs irregulars.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "gramatica-cv-001",
+              "titol": "Present d'indicatiu: verbs irregulars",
+              "fitxer": "gramatica/conjugacio-verbal/cv-001.json"
+            },
+            {
+              "id": "gramatica-cv-002",
+              "titol": "Passat perifràstic vs. perfet",
+              "fitxer": "gramatica/conjugacio-verbal/cv-002.json"
+            }
+          ]
         },
         {
           "id": "determinants",
           "nom": "Determinants",
           "descripcio": "Articles, demostratius, possessius i indefinits.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "gramatica-det-001",
+              "titol": "Articles i determinants: tria el correcte",
+              "fitxer": "gramatica/determinants/det-001.json"
+            }
+          ]
         }
       ]
     },
@@ -61,19 +78,42 @@
           "id": "accents",
           "nom": "Accents",
           "descripcio": "Accent obert, tancat i diacrític.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "ortografia-acc-001",
+              "titol": "Accent obert o tancat?",
+              "fitxer": "ortografia/accents/acc-001.json"
+            },
+            {
+              "id": "ortografia-acc-002",
+              "titol": "Accent diacrític: sí o si?",
+              "fitxer": "ortografia/accents/acc-002.json"
+            }
+          ]
         },
         {
           "id": "ela-geminada",
           "nom": "La l·l (ela geminada)",
           "descripcio": "Paraules amb l·l i diferència amb l simple.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "ortografia-ll-001",
+              "titol": "L·l o ll? Completa la paraula",
+              "fitxer": "ortografia/ela-geminada/ll-001.json"
+            }
+          ]
         },
         {
           "id": "apostrof-guionet",
           "nom": "Apòstrof i guionet",
           "descripcio": "Apostrofació de l'article i pronoms enclítics.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "ortografia-ag-001",
+              "titol": "Apòstrof: sí o no?",
+              "fitxer": "ortografia/apostrof-guionet/ag-001.json"
+            }
+          ]
         }
       ]
     },
@@ -88,19 +128,37 @@
           "id": "sinonims-antonims",
           "nom": "Sinònims i antònims",
           "descripcio": "Relacions de significat entre paraules.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "lexic-sa-001",
+              "titol": "Sinònims: troba el significat equivalent",
+              "fitxer": "lexic/sinonims-antonims/sa-001.json"
+            }
+          ]
         },
         {
           "id": "camps-semantics",
           "nom": "Camps semàntics",
           "descripcio": "Agrupació de paraules per significat.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "lexic-cs-001",
+              "titol": "Camps semàntics: classifica les paraules",
+              "fitxer": "lexic/camps-semantics/cs-001.json"
+            }
+          ]
         },
         {
           "id": "barbarismes",
           "nom": "Barbarismes",
           "descripcio": "Castellanismes freqüents i les seves alternatives catalanes.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "lexic-barb-001",
+              "titol": "Barbarismes: classifica correcte o incorrecte",
+              "fitxer": "lexic/barbarismes/barb-001.json"
+            }
+          ]
         }
       ]
     },
@@ -115,7 +173,13 @@
           "id": "subjecte-predicat",
           "nom": "Subjecte i predicat",
           "descripcio": "Identificació del subjecte i el predicat en oracions.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "sintaxi-sp-001",
+              "titol": "Identifica subjecte i predicat",
+              "fitxer": "sintaxi/subjecte-predicat/sp-001.json"
+            }
+          ]
         },
         {
           "id": "complements",
@@ -133,7 +197,13 @@
           "id": "tipus-oracions",
           "nom": "Tipus d'oracions",
           "descripcio": "Oracions enunciatives, interrogatives, imperatives i més.",
-          "exercicis": []
+          "exercicis": [
+            {
+              "id": "sintaxi-to-001",
+              "titol": "Tipus d'oracions: classifica",
+              "fitxer": "sintaxi/tipus-oracions/to-001.json"
+            }
+          ]
         }
       ]
     }

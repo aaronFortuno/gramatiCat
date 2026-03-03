@@ -1,0 +1,50 @@
+{
+  "id": "gramatica-cv-002",
+  "titol": "Passat perifràstic vs. perfet",
+  "descripcio": "Tria la forma verbal correcta segons el context.",
+  "tipus": "multiple-choice",
+  "nivell": "ESO1",
+  "temps_recomanat": 150,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Ahir _ al cinema amb els amics.",
+      "opcions": ["vam anar", "hem anat", "anàrem", "vàrem anar"],
+      "resposta_correcta": 0,
+      "explicacio": "Amb 'ahir' (temps concret passat) usem el passat perifràstic: 'vam anar'. 'Vàrem anar' és correcte però menys habitual."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Aquesta setmana _ tres llibres.",
+      "opcions": ["vam llegir", "hem llegit", "llegírem", "van llegir"],
+      "resposta_correcta": 1,
+      "explicacio": "'Aquesta setmana' indica un període que inclou el present, per tant usem el perfet: 'hem llegit'."
+    },
+    {
+      "id": "q3",
+      "enunciat": "L'any passat la família _ de ciutat.",
+      "opcions": ["va canviar", "ha canviat", "canvià", "canviava"],
+      "resposta_correcta": 0,
+      "explicacio": "'L'any passat' és un temps concret i acabat: passat perifràstic 'va canviar'."
+    },
+    {
+      "id": "q4",
+      "enunciat": "Avui _ molt bé a l'examen.",
+      "opcions": ["vaig respondre", "he respost", "responguí", "responia"],
+      "resposta_correcta": 1,
+      "explicacio": "'Avui' inclou el moment present, per tant usem el perfet: 'he respost'."
+    },
+    {
+      "id": "q5",
+      "enunciat": "El 1992 Barcelona _ els Jocs Olímpics.",
+      "opcions": ["va acollir", "ha acollit", "acollí", "acollia"],
+      "resposta_correcta": 0,
+      "explicacio": "Una data concreta del passat demana passat perifràstic: 'va acollir'."
+    }
+  ],
+  "metadata": {
+    "categoria": "gramatica",
+    "tema": "conjugacio-verbal",
+    "tags": ["conjugació", "passat perifràstic", "perfet", "gramàtica", "ESO"]
+  }
+}

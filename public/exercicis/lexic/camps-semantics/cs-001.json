@@ -1,0 +1,37 @@
+{
+  "id": "lexic-cs-001",
+  "titol": "Camps semàntics: classifica les paraules",
+  "descripcio": "Classifica cada paraula dins del camp semàntic corresponent.",
+  "tipus": "word-classification",
+  "nivell": "CS",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Classifica les paraules segons el camp semàntic: animals o plantes.",
+      "paraules": ["gat", "roser", "àguila", "pi", "sardina", "margarida", "llop", "olivera"],
+      "columnes": ["Animals", "Plantes"],
+      "classificacio_correcta": {
+        "Animals": ["gat", "àguila", "sardina", "llop"],
+        "Plantes": ["roser", "pi", "margarida", "olivera"]
+      },
+      "explicacio": "El camp semàntic dels animals inclou gat, àguila, sardina i llop. El de les plantes inclou roser, pi, margarida i olivera."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Classifica les paraules segons el camp semàntic: sentiments o accions.",
+      "paraules": ["alegria", "córrer", "tristesa", "saltar", "por", "escriure"],
+      "columnes": ["Sentiments", "Accions"],
+      "classificacio_correcta": {
+        "Sentiments": ["alegria", "tristesa", "por"],
+        "Accions": ["córrer", "saltar", "escriure"]
+      },
+      "explicacio": "Sentiments: estats emocionals (alegria, tristesa, por). Accions: activitats que es fan (córrer, saltar, escriure)."
+    }
+  ],
+  "metadata": {
+    "categoria": "lexic",
+    "tema": "camps-semantics",
+    "tags": ["camps semàntics", "classificació", "lèxic", "cicle-superior"]
+  }
+}

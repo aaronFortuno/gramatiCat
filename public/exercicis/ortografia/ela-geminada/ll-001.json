@@ -1,0 +1,63 @@
+{
+  "id": "ortografia-ll-001",
+  "titol": "L·l o ll? Completa la paraula",
+  "descripcio": "Completa les paraules amb 'l·l' (ela geminada) o 'll' segons correspongui.",
+  "tipus": "fill-in-the-blank",
+  "nivell": "CS",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "La inte_igència artificial avança molt ràpid.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "l·l", "opcions": ["l·l", "ll"] }
+      ],
+      "explicacio": "'Intel·ligència' s'escriu amb ela geminada (l·l) perquè prové del llatí INTELLIGENTIA."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Hem d'i_uminar tot el carrer per la festa.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "l·l", "opcions": ["l·l", "ll"] }
+      ],
+      "explicacio": "'Il·luminar' porta ela geminada: del llatí ILLUMINARE."
+    },
+    {
+      "id": "q3",
+      "enunciat": "La co_aboració entre equips és fonamental.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "l·l", "opcions": ["l·l", "ll"] }
+      ],
+      "explicacio": "'Col·laboració' porta ela geminada: del llatí COLLABORATIO."
+    },
+    {
+      "id": "q4",
+      "enunciat": "La ga_ina ponia ous cada dia.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "ll", "opcions": ["l·l", "ll"] }
+      ],
+      "explicacio": "'Gallina' s'escriu amb 'll' (ela doble), no amb ela geminada."
+    },
+    {
+      "id": "q5",
+      "enunciat": "Han insta_at un nou programa a l'ordinador.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "l·l", "opcions": ["l·l", "ll"] }
+      ],
+      "explicacio": "'Instal·lat' porta ela geminada: del llatí INSTALLARE."
+    },
+    {
+      "id": "q6",
+      "enunciat": "La pae_a és un plat típic valencià.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "ll", "opcions": ["l·l", "ll"] }
+      ],
+      "explicacio": "'Paella' s'escriu amb 'll': no prové d'un prefix llatí amb doble l."
+    }
+  ],
+  "metadata": {
+    "categoria": "ortografia",
+    "tema": "ela-geminada",
+    "tags": ["ela geminada", "l·l", "ortografia", "cicle-superior"]
+  }
+}

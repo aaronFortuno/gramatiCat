@@ -1,0 +1,37 @@
+{
+  "id": "lexic-barb-001",
+  "titol": "Barbarismes: classifica correcte o incorrecte",
+  "descripcio": "Classifica les paraules: són formes correctes en català o barbarismes (castellanismes)?",
+  "tipus": "word-classification",
+  "nivell": "CS",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Classifica: forma catalana correcta o barbarisme?",
+      "paraules": ["entonces", "aleshores", "desarrollo", "desenvolupament", "cole", "escola", "barco", "vaixell"],
+      "columnes": ["Forma correcta", "Barbarisme"],
+      "classificacio_correcta": {
+        "Forma correcta": ["aleshores", "desenvolupament", "escola", "vaixell"],
+        "Barbarisme": ["entonces", "desarrollo", "cole", "barco"]
+      },
+      "explicacio": "'Entonces' → 'aleshores', 'desarrollo' → 'desenvolupament', 'cole' → 'escola', 'barco' → 'vaixell'. Els barbarismes són paraules d'altres llengües usades incorrectament en lloc de les catalanes."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Classifica: forma catalana correcta o barbarisme?",
+      "paraules": ["disfrutar", "gaudir", "cumpleaños", "aniversari", "empleo", "feina", "enhorabona", "enhorabuena"],
+      "columnes": ["Forma correcta", "Barbarisme"],
+      "classificacio_correcta": {
+        "Forma correcta": ["gaudir", "aniversari", "feina", "enhorabona"],
+        "Barbarisme": ["disfrutar", "cumpleaños", "empleo", "enhorabuena"]
+      },
+      "explicacio": "'Disfrutar' → 'gaudir', 'cumpleaños' → 'aniversari', 'empleo' → 'feina', 'enhorabuena' → 'enhorabona'."
+    }
+  ],
+  "metadata": {
+    "categoria": "lexic",
+    "tema": "barbarismes",
+    "tags": ["barbarismes", "castellanismes", "lèxic", "cicle-superior"]
+  }
+}

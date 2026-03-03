@@ -1,0 +1,55 @@
+{
+  "id": "ortografia-acc-002",
+  "titol": "Accent diacrític: sí o si?",
+  "descripcio": "Completa amb la paraula correcta segons el context: amb accent o sense.",
+  "tipus": "fill-in-the-blank",
+  "nivell": "CS",
+  "temps_recomanat": 150,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "_ que vindré a la festa, no pateixis.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "Sí", "opcions": ["Sí", "Si"] }
+      ],
+      "explicacio": "'Sí' amb accent = afirmació. 'Si' sense accent = condicional."
+    },
+    {
+      "id": "q2",
+      "enunciat": "_ plou, ens quedarem a casa.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "Si", "opcions": ["Sí", "Si"] }
+      ],
+      "explicacio": "'Si' sense accent = conjunció condicional."
+    },
+    {
+      "id": "q3",
+      "enunciat": "Vols un _ de llet?",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "got", "opcions": ["got", "gòt"] }
+      ],
+      "explicacio": "'Got' no porta accent: és un mot monosíl·lab sense homòfon."
+    },
+    {
+      "id": "q4",
+      "enunciat": "La _ de la Maria és molt bonica.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "nét", "opcions": ["nét", "net"] }
+      ],
+      "explicacio": "'Nét' (fill del fill) porta accent per distingir-lo de 'net' (adjectiu = sense brutícia)."
+    },
+    {
+      "id": "q5",
+      "enunciat": "Vull un te _ calent, si us plau.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "ben", "opcions": ["bén", "ben"] }
+      ],
+      "explicacio": "'Ben' (adverbi) no porta accent diacrític en català."
+    }
+  ],
+  "metadata": {
+    "categoria": "ortografia",
+    "tema": "accents",
+    "tags": ["accents", "diacrític", "ortografia", "cicle-superior"]
+  }
+}

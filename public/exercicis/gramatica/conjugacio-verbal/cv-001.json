@@ -1,0 +1,55 @@
+{
+  "id": "gramatica-cv-001",
+  "titol": "Present d'indicatiu: verbs irregulars",
+  "descripcio": "Completa les frases amb la forma correcta del present d'indicatiu.",
+  "tipus": "fill-in-the-blank",
+  "nivell": "CS",
+  "temps_recomanat": 150,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Jo _ (fer) els deures cada tarda.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "faig", "opcions": ["faig", "fac", "fem", "fes"] }
+      ],
+      "explicacio": "El verb 'fer' en primera persona del present d'indicatiu és 'faig'."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Nosaltres _ (anar) a l'escola cada matí.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "anem", "opcions": ["anem", "anam", "van", "aneu"] }
+      ],
+      "explicacio": "'Anar' en primera persona del plural del present: 'anem'."
+    },
+    {
+      "id": "q3",
+      "enunciat": "Tu _ (dir) sempre la veritat.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "dius", "opcions": ["dius", "dirs", "dís", "diues"] }
+      ],
+      "explicacio": "'Dir' en segona persona del singular del present: 'dius'."
+    },
+    {
+      "id": "q4",
+      "enunciat": "Ells _ (voler) anar al parc.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "volen", "opcions": ["volen", "vólen", "volin", "volan"] }
+      ],
+      "explicacio": "'Voler' en tercera persona del plural del present: 'volen'."
+    },
+    {
+      "id": "q5",
+      "enunciat": "La Maria _ (saber) parlar tres idiomes.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "sap", "opcions": ["sap", "sab", "sabe", "saps"] }
+      ],
+      "explicacio": "'Saber' en tercera persona del singular del present: 'sap'."
+    }
+  ],
+  "metadata": {
+    "categoria": "gramatica",
+    "tema": "conjugacio-verbal",
+    "tags": ["conjugació", "present", "indicatiu", "verbs irregulars", "gramàtica"]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sintaxi-to-001",
+  "titol": "Tipus d'oracions: classifica",
+  "descripcio": "Identifica el tipus de cada oració segons la intenció del parlant.",
+  "tipus": "multiple-choice",
+  "nivell": "CS",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Quin tipus d'oració és? 'Tanca la porta, si us plau.'",
+      "opcions": ["Enunciativa", "Interrogativa", "Imperativa", "Exclamativa"],
+      "resposta_correcta": 2,
+      "explicacio": "És imperativa perquè expressa un ordre o petició: 'Tanca la porta'."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Quin tipus d'oració és? 'On has deixat les claus?'",
+      "opcions": ["Enunciativa", "Interrogativa", "Imperativa", "Exclamativa"],
+      "resposta_correcta": 1,
+      "explicacio": "És interrogativa perquè formula una pregunta."
+    },
+    {
+      "id": "q3",
+      "enunciat": "Quin tipus d'oració és? 'Avui fa un dia molt bonic.'",
+      "opcions": ["Enunciativa", "Interrogativa", "Imperativa", "Exclamativa"],
+      "resposta_correcta": 0,
+      "explicacio": "És enunciativa perquè afirma un fet de manera neutra."
+    },
+    {
+      "id": "q4",
+      "enunciat": "Quin tipus d'oració és? 'Quin gol més increïble!'",
+      "opcions": ["Enunciativa", "Interrogativa", "Imperativa", "Exclamativa"],
+      "resposta_correcta": 3,
+      "explicacio": "És exclamativa perquè expressa una emoció intensa (sorpresa, admiració)."
+    },
+    {
+      "id": "q5",
+      "enunciat": "Quin tipus d'oració és? 'Potser demà plourà.'",
+      "opcions": ["Enunciativa", "Dubitativa", "Imperativa", "Interrogativa"],
+      "resposta_correcta": 1,
+      "explicacio": "És dubitativa perquè expressa dubte o possibilitat: 'potser'."
+    },
+    {
+      "id": "q6",
+      "enunciat": "Quin tipus d'oració és? 'Tant de bo vingui a la festa!'",
+      "opcions": ["Enunciativa", "Exclamativa", "Desiderativa", "Interrogativa"],
+      "resposta_correcta": 2,
+      "explicacio": "És desiderativa perquè expressa un desig: 'Tant de bo'."
+    }
+  ],
+  "metadata": {
+    "categoria": "sintaxi",
+    "tema": "tipus-oracions",
+    "tags": ["tipus d'oracions", "sintaxi", "cicle-superior"]
+  }
+}

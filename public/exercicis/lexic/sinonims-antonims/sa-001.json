@@ -1,0 +1,57 @@
+{
+  "id": "lexic-sa-001",
+  "titol": "Sinònims: troba el significat equivalent",
+  "descripcio": "Tria el sinònim correcte per a cada paraula destacada.",
+  "tipus": "multiple-choice",
+  "nivell": "CS",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "Quin és un sinònim de 'content'?",
+      "opcions": ["trist", "feliç", "enfadat", "cansat"],
+      "resposta_correcta": 1,
+      "explicacio": "'Content' i 'feliç' signifiquen que algú experimenta alegria o satisfacció."
+    },
+    {
+      "id": "q2",
+      "enunciat": "Quin és un sinònim de 'bonic'?",
+      "opcions": ["lleig", "formós", "petit", "gran"],
+      "resposta_correcta": 1,
+      "explicacio": "'Bonic' i 'formós' indiquen bellesa o aspecte agradable."
+    },
+    {
+      "id": "q3",
+      "enunciat": "Quin és un sinònim de 'ràpid'?",
+      "opcions": ["lent", "veloz", "veloç", "quiet"],
+      "resposta_correcta": 2,
+      "explicacio": "'Ràpid' i 'veloç' signifiquen que es mou amb molta velocitat. 'Veloz' és un castellanisme."
+    },
+    {
+      "id": "q4",
+      "enunciat": "Quin és un antònim de 'gran'?",
+      "opcions": ["enorme", "immens", "petit", "alt"],
+      "resposta_correcta": 2,
+      "explicacio": "'Petit' és l'antònim de 'gran': significats oposats en referència a la mida."
+    },
+    {
+      "id": "q5",
+      "enunciat": "Quin és un antònim de 'clar'?",
+      "opcions": ["lluminós", "fosc", "net", "brillant"],
+      "resposta_correcta": 1,
+      "explicacio": "'Fosc' és l'antònim de 'clar': indiquen nivells oposats de llum."
+    },
+    {
+      "id": "q6",
+      "enunciat": "Quin és un sinònim de 'parlar'?",
+      "opcions": ["callar", "conversar", "escoltar", "escriure"],
+      "resposta_correcta": 1,
+      "explicacio": "'Parlar' i 'conversar' impliquen comunicar-se oralment."
+    }
+  ],
+  "metadata": {
+    "categoria": "lexic",
+    "tema": "sinonims-antonims",
+    "tags": ["sinònims", "antònims", "lèxic", "cicle-superior"]
+  }
+}
