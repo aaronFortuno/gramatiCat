@@ -44,6 +44,35 @@ export default function Sidebar({ categories, isOpen, onClose }: SidebarProps) {
           ))}
           <div className="border-t border-gray-100 my-4" />
           <NavLink
+            to="/medalles"
+            onClick={onClose}
+            className={({ isActive }) =>
+              `flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
+                isActive
+                  ? 'bg-blue-50 text-blue-700 font-medium'
+                  : 'text-gray-700 hover:bg-gray-50'
+              }`
+            }
+          >
+            <span className="text-lg">🏅</span>
+            <span>Medalles</span>
+          </NavLink>
+          <NavLink
+            to="/estadistiques"
+            onClick={onClose}
+            className={({ isActive }) =>
+              `flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
+                isActive
+                  ? 'bg-blue-50 text-blue-700 font-medium'
+                  : 'text-gray-700 hover:bg-gray-50'
+              }`
+            }
+          >
+            <span className="text-lg">📊</span>
+            <span>Estadístiques</span>
+          </NavLink>
+          <div className="border-t border-gray-100 my-4" />
+          <NavLink
             to="/admin"
             onClick={onClose}
             className={({ isActive }) =>

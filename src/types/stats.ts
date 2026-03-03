@@ -22,6 +22,7 @@ export interface HistorialEntry {
   encerts: number
   errors: number
   temps: number
+  bonusTemps?: number
 }
 
 export type Historial = HistorialEntry[]

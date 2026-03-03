@@ -1,9 +1,19 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { loadManifest, loadExercise } from '../services/contentService'
-import { updateCategoryStats, addHistorialEntry } from '../services/storageService'
+import {
+  updateCategoryStats,
+  addHistorialEntry,
+  updateStreaks,
+  getStreaks,
+  getMedalles,
+  addMedalla,
+  getHistorial,
+} from '../services/storageService'
+import { checkMedals } from '../services/gamificationService'
 import ExerciseRunner from '../components/exercises/ExerciseRunner'
 import type { Exercise } from '../types/exercise'
+import type { EarnedMedal } from '../types/gamification'
 
 export default function ExercisePage() {
   const { exerciciId } = useParams<{ exerciciId: string }>()
@@ -11,6 +21,9 @@ export default function ExercisePage() {
   const [error, setError] = useState<string | null>(null)
   const [startTime] = useState(() => Date.now())
   const [completed, setCompleted] = useState(false)
+  const [streak, setStreak] = useState(0)
+  const [newMedals, setNewMedals] = useState<EarnedMedal[]>([])
+  const [bonusTemps, setBonusTemps] = useState<number>(0)
 
   useEffect(() => {
     if (!exerciciId) return
@@ -31,11 +44,26 @@ export default function ExercisePage() {
       .catch((err) => setError(err.message))
   }, [exerciciId])
 
-  function handleComplete(encerts: number, errors: number) {
+  const handleAnswer = useCallback((correct: boolean) => {
+    const streaks = updateStreaks(correct)
+    setStreak(streaks.ratxaActual)
+  }, [])
+
+  function handleComplete(encerts: number, errors: number, tempsUsed: number) {
     if (!exercise || completed) return
     setCompleted(true)
 
-    const temps = Math.round((Date.now() - startTime) / 1000)
+    const temps = tempsUsed > 0 ? tempsUsed : Math.round((Date.now() - startTime) / 1000)
+
+    // Calculate time bonus: percentage of recommended time saved, scaled 0-100
+    const tempsRecomanat = exercise.temps_recomanat
+    let bonus = 0
+    const total = encerts + errors
+    const percentage = total > 0 ? (encerts / total) * 100 : 0
+    if (percentage >= 50 && tempsRecomanat > 0 && temps < tempsRecomanat) {
+      bonus = Math.round(((tempsRecomanat - temps) / tempsRecomanat) * 100)
+    }
+    setBonusTemps(bonus)
 
     updateCategoryStats(exercise.metadata.categoria, encerts, errors, temps)
     addHistorialEntry({
@@ -44,7 +72,33 @@ export default function ExercisePage() {
       encerts,
       errors,
       temps,
+      bonusTemps: bonus,
     })
+
+    // Check medals
+    const streaks = getStreaks()
+    const today = new Date().toISOString().split('T')[0]
+    const historial = getHistorial()
+    const exercicisAvui = historial.filter((h) => h.data.startsWith(today)).length
+
+    const medals = checkMedals({
+      categoriaId: exercise.metadata.categoria,
+      encerts,
+      errors,
+      temps,
+      ratxaMaxima: streaks.ratxaMaxima,
+      ratxaDiaria: streaks.ratxaDiaria,
+      exercicisAvui,
+      bonusTemps: bonus,
+      earnedMedals: getMedalles(),
+    })
+
+    if (medals.length > 0) {
+      for (const m of medals) {
+        addMedalla(m)
+      }
+      setNewMedals(medals)
+    }
   }
 
   if (error) {
@@ -87,7 +141,14 @@ export default function ExercisePage() {
       <p className="text-gray-500 mb-6">{exercise.descripcio}</p>
 
       <div className="bg-white rounded-xl border border-gray-200 p-6">
-        <ExerciseRunner exercise={exercise} onComplete={handleComplete} />
+        <ExerciseRunner
+          exercise={exercise}
+          onComplete={handleComplete}
+          onAnswer={handleAnswer}
+          streak={streak}
+          newMedals={newMedals}
+          bonusTemps={bonusTemps}
+        />
       </div>
 
       {completed && (
