@@ -1,0 +1,50 @@
+{
+  "id": "gramatica-pf-001",
+  "titol": "Pronoms febles: substitueix el complement",
+  "descripcio": "Identifica quin pronom feble substitueix correctament el complement destacat.",
+  "tipus": "multiple-choice",
+  "nivell": "ESO1",
+  "temps_recomanat": 180,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "La Marta menja *una poma*. → La Marta...",
+      "opcions": ["la menja", "en menja una", "li menja", "ho menja"],
+      "resposta_correcta": 1,
+      "explicacio": "'Una poma' és un CD indefinit (una), per tant es substitueix pel pronom 'en': 'La Marta en menja una'."
+    },
+    {
+      "id": "q2",
+      "enunciat": "He donat *el llibre* *a la Maria*. → ...",
+      "opcions": ["L'hi he donat", "Li ho he donat", "La hi he donat", "El li he donat"],
+      "resposta_correcta": 0,
+      "explicacio": "'El llibre' (CD masculí singular) → el/l'. 'A la Maria' (CI) → li/hi. Combinats: l'hi he donat."
+    },
+    {
+      "id": "q3",
+      "enunciat": "Anirem *a Barcelona* demà. → ... anirem demà.",
+      "opcions": ["En", "Hi", "Ho", "La"],
+      "resposta_correcta": 1,
+      "explicacio": "'A Barcelona' és un complement de lloc (CCL). Es substitueix pel pronom 'hi'."
+    },
+    {
+      "id": "q4",
+      "enunciat": "Tinc *tres gats*. → ... tinc tres.",
+      "opcions": ["Els", "En", "Hi", "Ho"],
+      "resposta_correcta": 1,
+      "explicacio": "Quan el CD porta un numeral, el pronom és 'en' i el numeral es manté: 'En tinc tres'."
+    },
+    {
+      "id": "q5",
+      "enunciat": "Vols *que vingui a la festa*? → ... vols?",
+      "opcions": ["Ho", "Hi", "En", "Li"],
+      "resposta_correcta": 0,
+      "explicacio": "Una oració subordinada en funció de CD es substitueix pel pronom 'ho': 'Ho vols?'"
+    }
+  ],
+  "metadata": {
+    "categoria": "gramatica",
+    "tema": "pronoms-febles",
+    "tags": ["pronoms febles", "gramàtica", "ESO"]
+  }
+}

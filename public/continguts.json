@@ -1,0 +1,130 @@
+{
+  "categories": [
+    {
+      "id": "gramatica",
+      "nom": "Gramàtica",
+      "descripcio": "Categories gramaticals, conjugació, pronoms febles i concordança.",
+      "icona": "📝",
+      "color": "#2563eb",
+      "temes": [
+        {
+          "id": "pronoms-febles",
+          "nom": "Pronoms febles",
+          "descripcio": "Substitució de complements, combinació i col·locació dels pronoms febles.",
+          "exercicis": [
+            {
+              "id": "gramatica-pf-001",
+              "titol": "Pronoms febles: substitueix el complement",
+              "fitxer": "gramatica/pronoms-febles/pf-001.json"
+            }
+          ]
+        },
+        {
+          "id": "conjugacio-verbal",
+          "nom": "Conjugació verbal",
+          "descripcio": "Temps verbals, modes i verbs irregulars.",
+          "exercicis": []
+        },
+        {
+          "id": "determinants",
+          "nom": "Determinants",
+          "descripcio": "Articles, demostratius, possessius i indefinits.",
+          "exercicis": []
+        }
+      ]
+    },
+    {
+      "id": "ortografia",
+      "nom": "Ortografia",
+      "descripcio": "Accents, b/v, l·l, apòstrof, dièresi i signes de puntuació.",
+      "icona": "✏️",
+      "color": "#16a34a",
+      "temes": [
+        {
+          "id": "b-v",
+          "nom": "La b i la v",
+          "descripcio": "Regles i pràctica per distingir entre b i v.",
+          "exercicis": [
+            {
+              "id": "ortografia-bv-001",
+              "titol": "La b i la v: paraules d'ús freqüent",
+              "fitxer": "ortografia/b-v/bv-001.json"
+            }
+          ]
+        },
+        {
+          "id": "accents",
+          "nom": "Accents",
+          "descripcio": "Accent obert, tancat i diacrític.",
+          "exercicis": []
+        },
+        {
+          "id": "ela-geminada",
+          "nom": "La l·l (ela geminada)",
+          "descripcio": "Paraules amb l·l i diferència amb l simple.",
+          "exercicis": []
+        },
+        {
+          "id": "apostrof-guionet",
+          "nom": "Apòstrof i guionet",
+          "descripcio": "Apostrofació de l'article i pronoms enclítics.",
+          "exercicis": []
+        }
+      ]
+    },
+    {
+      "id": "lexic",
+      "nom": "Lèxic",
+      "descripcio": "Sinònims, antònims, camps semàntics, barbarismes i frases fetes.",
+      "icona": "📚",
+      "color": "#f59e0b",
+      "temes": [
+        {
+          "id": "sinonims-antonims",
+          "nom": "Sinònims i antònims",
+          "descripcio": "Relacions de significat entre paraules.",
+          "exercicis": []
+        },
+        {
+          "id": "camps-semantics",
+          "nom": "Camps semàntics",
+          "descripcio": "Agrupació de paraules per significat.",
+          "exercicis": []
+        },
+        {
+          "id": "barbarismes",
+          "nom": "Barbarismes",
+          "descripcio": "Castellanismes freqüents i les seves alternatives catalanes.",
+          "exercicis": []
+        }
+      ]
+    },
+    {
+      "id": "sintaxi",
+      "nom": "Sintaxi",
+      "descripcio": "Subjecte, predicat, complements, tipus d'oracions i connectors.",
+      "icona": "🔗",
+      "color": "#dc2626",
+      "temes": [
+        {
+          "id": "subjecte-predicat",
+          "nom": "Subjecte i predicat",
+          "descripcio": "Identificació del subjecte i el predicat en oracions.",
+          "exercicis": []
+        },
+        {
+          "id": "complements",
+          "nom": "Complements del predicat",
+          "descripcio": "CD, CI, CC, atribut i complement predicatiu.",
+          "exercicis": []
+        },
+        {
+          "id": "tipus-oracions",
+          "nom": "Tipus d'oracions",
+          "descripcio": "Oracions enunciatives, interrogatives, imperatives i més.",
+          "exercicis": []
+        }
+      ]
+    }
+  ]
+}

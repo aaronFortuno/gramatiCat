@@ -1,0 +1,63 @@
+{
+  "id": "ortografia-bv-001",
+  "titol": "La b i la v: paraules d'ús freqüent",
+  "descripcio": "Completa les paraules amb la lletra correcta: b o v.",
+  "tipus": "fill-in-the-blank",
+  "nivell": "CS",
+  "temps_recomanat": 120,
+  "preguntes": [
+    {
+      "id": "q1",
+      "enunciat": "La Maria va _eure molta aigua després de córrer.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "b", "opcions": ["b", "v"] }
+      ],
+      "explicacio": "'Beure' s'escriu amb b perquè prové del llatí BIBERE."
+    },
+    {
+      "id": "q2",
+      "enunciat": "El _ern és l'estació més freda de l'any.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "hi", "opcions": ["hi", "i"] }
+      ],
+      "explicacio": "'Hivern' s'escriu amb h inicial i v, del llatí HIBERNUM."
+    },
+    {
+      "id": "q3",
+      "enunciat": "Ahir _am anar al cinema amb els amics.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "v", "opcions": ["b", "v"] }
+      ],
+      "explicacio": "'Vam' (del verb anar) s'escriu sempre amb v."
+    },
+    {
+      "id": "q4",
+      "enunciat": "El go_ern ha aprovat una nova llei.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "v", "opcions": ["b", "v"] }
+      ],
+      "explicacio": "'Govern' s'escriu amb v."
+    },
+    {
+      "id": "q5",
+      "enunciat": "Necessitem sa_er la veritat sobre el que va passar.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "b", "opcions": ["b", "v"] }
+      ],
+      "explicacio": "'Saber' s'escriu amb b, del llatí SAPERE."
+    },
+    {
+      "id": "q6",
+      "enunciat": "La mestra _a escriure la data a la pissarra.",
+      "buits": [
+        { "posicio": 0, "resposta_correcta": "v", "opcions": ["b", "v"] }
+      ],
+      "explicacio": "'Va' (del verb anar, auxiliar de passat) s'escriu sempre amb v."
+    }
+  ],
+  "metadata": {
+    "categoria": "ortografia",
+    "tema": "b-v",
+    "tags": ["b/v", "ortografia", "cicle-superior"]
+  }
+}
