@@ -8,8 +8,25 @@ interface Props {
 
 type Range = 7 | 30
 
-function aggregateByDay(historial: Historial, days: number) {
+function aggregateByDay(historial: Historial, maxDays: number) {
   const today = new Date()
+  const todayStr = today.toISOString().split('T')[0]
+
+  // Find the earliest date with actual data
+  let earliestDate = todayStr
+  for (const entry of historial) {
+    const d = entry.data.split('T')[0]
+    if (d < earliestDate) earliestDate = d
+  }
+
+  // Calculate days since earliest entry
+  const earliest = new Date(earliestDate)
+  const diffMs = today.getTime() - earliest.getTime()
+  const daysSinceFirst = Math.floor(diffMs / 86400000) + 1 // +1 to include today
+
+  // Only show as many days as we actually have data for, capped at maxDays
+  const days = Math.min(daysSinceFirst, maxDays)
+
   const result: { data: string; label: string; encerts: number; total: number; percentatge: number }[] = []
 
   for (let i = days - 1; i >= 0; i--) {
@@ -74,7 +91,7 @@ export default function EvolutionChart({ historial }: Props) {
           <XAxis
             dataKey="label"
             tick={{ fontSize: 11 }}
-            interval={range === 30 ? 4 : 0}
+            interval={data.length > 10 ? Math.floor(data.length / 7) : 0}
           />
           <YAxis domain={[0, 100]} tick={{ fontSize: 11 }} unit="%" />
           <Tooltip

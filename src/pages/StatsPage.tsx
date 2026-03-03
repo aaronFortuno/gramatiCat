@@ -1,4 +1,5 @@
-import { getStats, getStreaks, getHistorial } from '../services/storageService'
+import { useState } from 'react'
+import { getStats, getStreaks, getHistorial, clearAllData } from '../services/storageService'
 import CategoryBarChart from '../components/stats/CategoryBarChart'
 import EvolutionChart from '../components/stats/EvolutionChart'
 import ActivityHeatmap from '../components/stats/ActivityHeatmap'
@@ -13,6 +14,9 @@ function formatTime(seconds: number): string {
 }
 
 export default function StatsPage() {
+  const [resetKey, setResetKey] = useState(0)
+
+  // Re-read on every render triggered by resetKey
   const stats = getStats()
   const streaks = getStreaks()
   const historial = getHistorial()
@@ -23,35 +27,74 @@ export default function StatsPage() {
   const totalRespostes = totalEncerts + totalErrors
   const percentatgeGlobal = totalRespostes > 0 ? Math.round((totalEncerts / totalRespostes) * 100) : 0
 
-  return (
-    <div className="space-y-8">
-      <h1 className="text-2xl font-bold text-gray-900">Estadístiques</h1>
+  const [showConfirm, setShowConfirm] = useState(false)
 
-      {/* Summary cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-          <p className="text-3xl font-bold text-blue-600">{historial.length}</p>
-          <p className="text-sm text-gray-500">Exercicis fets</p>
-        </div>
-        <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-          <p className="text-3xl font-bold text-green-600">{percentatgeGlobal}%</p>
-          <p className="text-sm text-gray-500">Encerts globals</p>
-        </div>
-        <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-          <p className="text-3xl font-bold text-orange-600">{streaks.ratxaMaxima}</p>
-          <p className="text-sm text-gray-500">Millor ratxa</p>
-        </div>
-        <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-          <p className="text-3xl font-bold text-purple-600">{formatTime(totalTemps)}</p>
-          <p className="text-sm text-gray-500">Temps total</p>
-        </div>
+  function handleReset() {
+    clearAllData()
+    setShowConfirm(false)
+    setResetKey((k) => k + 1)
+  }
+
+  return (
+    <div className="space-y-6" key={resetKey}>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold text-gray-900">Estadístiques</h1>
+        {!showConfirm ? (
+          <button
+            onClick={() => setShowConfirm(true)}
+            className="px-3 py-1.5 text-xs text-red-600 border border-red-200 rounded-lg hover:bg-red-50 transition-colors"
+          >
+            Reiniciar dades
+          </button>
+        ) : (
+          <div className="flex items-center gap-2">
+            <span className="text-xs text-red-600">Segur? Es perdran totes les dades.</span>
+            <button
+              onClick={handleReset}
+              className="px-3 py-1.5 text-xs text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors"
+            >
+              Confirmar
+            </button>
+            <button
+              onClick={() => setShowConfirm(false)}
+              className="px-3 py-1.5 text-xs text-gray-600 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
+            >
+              Cancel·lar
+            </button>
+          </div>
+        )}
       </div>
 
-      {/* Category bar chart */}
-      <section className="bg-white rounded-xl border border-gray-200 p-5">
-        <h2 className="text-lg font-semibold text-gray-800 mb-4">Encerts per categoria</h2>
-        <CategoryBarChart stats={stats} />
-      </section>
+      {/* Summary + Category chart side by side */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Summary cards stacked */}
+        <div className="flex flex-col gap-3">
+          <div className="bg-white rounded-xl border border-gray-200 p-4 flex items-center gap-4">
+            <p className="text-3xl font-bold text-blue-600">{historial.length}</p>
+            <p className="text-sm text-gray-500">Exercicis fets</p>
+          </div>
+          <div className="bg-white rounded-xl border border-gray-200 p-4 flex items-center gap-4">
+            <p className="text-3xl font-bold text-green-600">{percentatgeGlobal}%</p>
+            <p className="text-sm text-gray-500">Encerts globals</p>
+          </div>
+          <div className="bg-white rounded-xl border border-gray-200 p-4 flex items-center gap-4">
+            <p className="text-3xl font-bold text-orange-600">{streaks.ratxaMaxima}</p>
+            <p className="text-sm text-gray-500">Millor ratxa</p>
+          </div>
+          <div className="bg-white rounded-xl border border-gray-200 p-4 flex items-center gap-4">
+            <p className="text-3xl font-bold text-purple-600">{formatTime(totalTemps)}</p>
+            <p className="text-sm text-gray-500">Temps total</p>
+          </div>
+        </div>
+
+        {/* Category bar chart */}
+        <section className="bg-white rounded-xl border border-gray-200 p-5 flex flex-col">
+          <h2 className="text-lg font-semibold text-gray-800 mb-4">Encerts per categoria</h2>
+          <div className="flex-1 min-h-[200px]">
+            <CategoryBarChart stats={stats} />
+          </div>
+        </section>
+      </div>
 
       {/* Evolution chart */}
       <section className="bg-white rounded-xl border border-gray-200 p-5">
